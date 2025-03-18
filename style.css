@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: #00c6ff;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.5);
+}
+
+.table {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #f0f8ff;
+}
+
+.table th {
+    background-color: rgba(0, 198, 255, 0.2);
+    color: #f0f8ff;
+}
+
+.btn-primary {
+    background-color: #00c6ff;
+    border-color: #00c6ff;
+}
+
+.btn-primary:hover {
+    background-color: #005f73;
+    border-color: #005f73;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-danger {
+    background-color: #e63946;
+}
+
+input.form-control, select.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f0f8ff;
+    border: none;
+}
+
+input.form-control::placeholder {
+    color: #f0f8ff;
+}
+
+footer {
+    text-align: center;
+    color: #f0f8ff;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Animasi gelembung laut */
+@keyframes bubbles {
+    0% { transform: translateY(0); opacity: 0.7; }
+    100% { transform: translateY(-500px); opacity: 0; }
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: bubbles 10s infinite;
+}
+
+/* Buat banyak gelembung */
+.bubble:nth-child(1) { left: 10%; animation-delay: 0s; }
+.bubble:nth-child(2) { left: 25%; animation-delay: 2s; }
+.bubble:nth-child(3) { left: 40%; animation-delay: 4s; }
+.bubble:nth-child(4) { left: 55%; animation-delay: 1s; }
+.bubble:nth-child(5) { left: 70%; animation-delay: 3s; }
