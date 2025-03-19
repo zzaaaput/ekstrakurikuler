@@ -10,7 +10,6 @@ $data = $conn->query("SELECT * FROM pendaftaran JOIN siswa ON pendaftaran.id_sis
     <meta charset="UTF-8">
     <title>Edit Pendaftaran</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
 <div class="container mt-4">
